@@ -4,7 +4,7 @@
 	import Add from 'virtual:icons/material-symbols/add-rounded';
 </script>
 
-<ul class="menu bg-base-200 w-56">
+<ul class="menu bg-base-200 w-56 pt-4">
 	<button class="btn btn-neutral btn-sm mx-4 my-1 justify-start"><Friend />Friends</button>
 	<button class="btn btn-sm mx-4 my-1 justify-start"><Requests />Requests</button>
 	<li class="menu-title">
@@ -16,43 +16,24 @@
 		</div>
 	</li>
 	<li>
-		<a href="/"
-			><div class="avatar placeholder online">
-				<div class="bg-neutral text-neutral-content rounded-full w-8">
-					<span class="text-xs">AW</span>
-				</div>
-			</div></a
-		>
-	</li>
-	<li>
-		<a href="/"
-			><div class="avatar placeholder online">
-				<div class="bg-neutral text-neutral-content rounded-full w-8">
-					<span class="text-xs">AW</span>
-				</div>
-			</div></a
-		>
-	</li>
-	<li>
-		<a href="/"
-        class="space-x-1 items-cente"
+		<a href="/" class="space-x-1 items-center"
 			><div class="avatar placeholder online">
 				<div class="bg-neutral text-neutral-content rounded-full w-8">
 					<span class="text-xs">AW</span>
 				</div>
 			</div>
-            <p class="mb-1">awyllie</p>
-            </a
-		>
+			<p class="mb-1">awyllie</p>
+		</a>
 	</li>
 	<li>
 		<a href="/"
-			><div class="avatar placeholder online">
+			><div class="avatar placeholder offline">
 				<div class="bg-neutral text-neutral-content rounded-full w-8">
-					<span class="text-xs">AW</span>
+					<span class="text-xs">OU</span>
 				</div>
-			</div></a
+			</div>
+			<p class="mb-1">otheruser</p>
+            </a
 		>
 	</li>
-
 </ul>
