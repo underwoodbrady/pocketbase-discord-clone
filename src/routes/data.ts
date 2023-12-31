@@ -1,5 +1,16 @@
 import { writable, type Writable } from "svelte/store";
 
+//Use userids to store initials, username, photo
+//pull out from pocketbase so can reuse through displaying messages
+
+// let d = {
+//     "123":{
+//         user:"awyllie",
+//         initials: "AW",
+//         pic: "...",
+//     }
+// }
+
 let messagesTemp = [
     {
         username: "awyllie",
