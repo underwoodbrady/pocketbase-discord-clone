@@ -2,7 +2,6 @@
     import "../app.css";
     import Sidemenu from "$lib/Sidemenu.svelte"
     import MessageSidebar from "$lib/MessageSidebar.svelte";
-    import ChatArea from "$lib/ChatArea.svelte";
 </script>
 <div class="flex">
     <nav class="flex">
@@ -10,8 +9,6 @@
         <MessageSidebar/>
     </nav>
     <main class="w-full">
-        <ChatArea/>
+        <slot />
     </main>
 </div>
-
-<slot />

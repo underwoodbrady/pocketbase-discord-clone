@@ -13,7 +13,7 @@
 		</a>
 	</li>
 	<li>
-		<a class="h-9" href="/">
+		<a class="h-9 active" href="/">
 			<Mail class="text-lg" />
 		</a>
 	</li>
