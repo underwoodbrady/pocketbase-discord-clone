@@ -5,6 +5,7 @@
 	import Connection from 'virtual:icons/material-symbols/wifi-rounded';
 
 	export let inCall: boolean = false;
+	export let onJoinCall: () => void;
 </script>
 
 <header
@@ -22,13 +23,14 @@
 					<Connection class="text-success text-sm" />
 					<p class="text-xs text-success font-semibold">Voice Connected</p>
 				</div>
+			{:else}
+				<button class={'btn btn-sm btn-ghost btn-circle' + (inCall ? ' btn-disabled' : '')} on:click={onJoinCall}>
+					<Call class="text-lg" />
+				</button>
+				<button class={'btn btn-sm btn-ghost btn-circle' + (inCall ? ' btn-disabled' : '')} on:click={onJoinCall}>
+					<Video class="text-lg" />
+				</button>
 			{/if}
-			<button class={'btn btn-sm btn-ghost btn-circle' + (inCall ? ' btn-disabled' : '')}>
-				<Call class="text-lg" />
-			</button>
-			<button class={'btn btn-sm btn-ghost btn-circle' + (inCall ? ' btn-disabled' : '')}>
-				<Video class="text-lg" />
-			</button>
 		</div>
 	</div>
 </header>

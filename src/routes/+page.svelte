@@ -2,14 +2,24 @@
 	import ChatHeader from '$lib/ChatHeader.svelte';
 	import ChatArea from '$lib/ChatArea.svelte';
 	import ChatFooter from '$lib/ChatFooter.svelte';
-    import ServerUsers from "$lib/ServerUsers.svelte"
+	import ChatCall from '$lib/ChatCall.svelte';
+	import MessageSidebar from '$lib/MessageSidebar.svelte';
+
+	let inCall: boolean = false;
+
+	function toggleInCall() {
+		inCall = !inCall;
+	}
 </script>
 
-<div class="w-full h-full flex flex-col justify-between">
-	<ChatHeader/>
-	<div class="flex h-full">
+<main class="flex h-full">
+	<MessageSidebar />
+	<div class="w-full h-full flex flex-col justify-between max-h-screen">
+		<ChatHeader {inCall} onJoinCall={toggleInCall} />
+		{#if inCall}
+			<ChatCall onEndCall={toggleInCall} />
+		{/if}
 		<ChatArea />
-		<!-- <ServerUsers/> -->
+		<ChatFooter />
 	</div>
-	<ChatFooter/>
-</div>
+</main>

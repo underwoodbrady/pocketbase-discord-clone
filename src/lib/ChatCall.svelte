@@ -3,6 +3,8 @@
     import Mic from 'virtual:icons/material-symbols/mic-rounded';
     import EndCall from 'virtual:icons/material-symbols/call-end';
 
+    export let onEndCall: ()=> void;
+
 </script>
 
 <div class="bg-base-300 p-6 flex flex-col items-center space-y-4">
@@ -22,7 +24,7 @@
         <button class="btn btn-circle">
             <Mic class="text-lg"/>
         </button>
-        <button class="btn btn-circle btn-error">
+        <button class="btn btn-circle btn-error" on:click={onEndCall}>
             <EndCall class="text-lg"/>
         </button>
     </div>

@@ -1,15 +1,13 @@
 <script lang="ts">
-	import Friend from 'virtual:icons/material-symbols/person-add-rounded';
-	import Requests from 'virtual:icons/material-symbols/stacked-email-outline';
 	import Add from 'virtual:icons/material-symbols/add-rounded';
 	import ArrowDown from 'virtual:icons/material-symbols/keyboard-arrow-down-rounded';
 	import Text from 'virtual:icons/material-symbols/text-snippet-outline-rounded';
-	import Sound from 'virtual:icons/material-symbols/queue-music-rounded';
+	import Sound from 'virtual:icons/mdi/microphone';
 </script>
 
 <div class="flex h-full flex-col">
     <header class="border-b bg-base-200 border-base-300 px-4 py-3 flex items-center space-x-2">
-        <button class="btn btn-sm btn-ghost w-full justify-start">
+        <button class="btn btn-sm btn-ghost w-full justify-between">
             <h3 class="">Server 1</h3>
             <ArrowDown class="text-lg"/>
         </button>
@@ -32,8 +30,8 @@
                 Rules
             </a>
         </li>
-        <li class="menu-title">
-            <div class="flex justify-between items-center">
+        <li class="menu-title ">
+            <div class="flex justify-between items-center ">
                 General
                 <button class="btn btn-circle btn-sm">
                     <Add />
@@ -41,7 +39,7 @@
             </div>
         </li>
         <li>
-            <a href="/" class="space-x-1 items-center"
+            <a href="/" class="space-x-1 items-center active"
                 >
                 <Text/>
                 general
@@ -77,7 +75,7 @@
             </a>
         </li>
         <li>
-            <a href="/" class="space-x-1 items-center"
+            <a href="/" class="space-x-1 items-center" 
                 >
                 <Sound/>
                 admin only
