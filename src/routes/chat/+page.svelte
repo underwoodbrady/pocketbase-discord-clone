@@ -2,14 +2,10 @@
 	import ChatHeader from '$lib/ChatHeader.svelte';
 	import ChatArea from '$lib/ChatArea.svelte';
 	import ChatFooter from '$lib/ChatFooter.svelte';
-    import ServerUsers from "$lib/ServerUsers.svelte"
 </script>
 
 <div class="w-full h-full flex flex-col justify-between">
 	<ChatHeader/>
-	<div class="flex h-full">
-		<ChatArea />
-		<!-- <ServerUsers/> -->
-	</div>
+	<ChatArea />
 	<ChatFooter/>
 </div>
