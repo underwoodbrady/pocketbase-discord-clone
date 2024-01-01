@@ -20,7 +20,7 @@
 		<div class="flex space-x-2 items-center">
 			{#if inCall}
 				<div class="flex items-center mr-2 space-x-1">
-					<Connection class="text-success text-sm" />
+					<Connection class="text-success text-xs" />
 					<p class="text-xs text-success font-semibold">Voice Connected</p>
 				</div>
 			{:else}

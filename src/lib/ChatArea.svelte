@@ -6,13 +6,15 @@
 
 <section class="p-6 w-full h-full flex-1 overflow-y-auto overflow-hidden">
 	<div class="prose">
-		<div class="avatar placeholder">
-			<div class="bg-neutral text-neutral-content rounded-full w-12">
-				<span>{messageChannel.initials}</span>
+		{#if messageChannel.initials}
+			<div class="avatar placeholder">
+				<div class="bg-neutral text-neutral-content rounded-full w-12">
+					<span>{messageChannel.initials}</span>
+				</div>
 			</div>
-		</div>
-		<h3 class="mt-4">{messageChannel.username}</h3>
-		<p>This is the beginning of your messages with {messageChannel.username}</p>
+		{/if}
+		<h3 class="mt-4">{messageChannel.topic}</h3>
+		<p>This is the beginning of your message channel with {messageChannel.topic}</p>
 	</div>
 	<div class="divider text-xs">December 31, 2023</div>
 

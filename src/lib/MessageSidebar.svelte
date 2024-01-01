@@ -40,7 +40,7 @@
 							<span class="text-xs">{(message.initials).toUpperCase()}</span>
 						</div>
 					</div>
-					<p class="mb-1">{message.username}</p>
+					<p class="mb-1">{message.topic}</p>
 				</button>
 			</li>
 		{/each}

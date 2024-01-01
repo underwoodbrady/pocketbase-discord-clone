@@ -13,7 +13,7 @@ import { writable, type Writable } from "svelte/store";
 
 let messagesTemp = [
     {
-        username: "awyllie",
+        topic: "awyllie",
         initials: "AW",
         messages: [
             {
@@ -38,19 +38,19 @@ let messagesTemp = [
         ]
     },
     {
-        username: "otheruser",
+        topic: "otheruser",
         initials: "OU",
         messages: [
             {
                 user: "otheruser",
                 initials: "OU",
-                message: "Get on rl",
+                message: "Hey can you hop on a call rq?",
                 time: "12:45pm",
             },
             {
                 user: "brades6",
                 initials: "BU",
-                message: "Bet",
+                message: "Sure thing",
                 time: "12:47pm",
             },
             {
@@ -58,7 +58,7 @@ let messagesTemp = [
                 initials: "BU",
                 startedCall: true,
                 time: "12:50pm",
-                length: "2 hours"
+                length: "20 minutes"
             },
             {
                 user: "otheruser",
@@ -82,4 +82,94 @@ let messagesTemp = [
     }
 ]
 
+let serversTemp = [
+    {
+        name:"Server #1",
+        color:"#8C2022",
+        channels: [
+            {
+                title:"Rules"
+            },
+            {
+                topic: "rules",
+                messages: [
+    
+                    {
+                        user: "brades6",
+                        initials: "BU",
+                        message: "Rule 1",
+                        time: "12:47pm",
+                    },
+                    {
+                        user: "brades6",
+                        initials: "BU",
+                        message: "Don't do anything I wouldn't do",
+                        time: "6:47pm",
+                    },
+                ]
+            },
+            {
+                title:"General"
+            },
+            {
+                topic: "general",
+                messages: [
+
+                ]
+            },
+            {
+                topic: "valorant",
+                messages: [
+
+                ]
+            },
+            {
+                topic: "memes",
+                messages: [
+
+                ]
+            },
+            {
+                title:"Voice"
+            },
+            {
+                topic: "voice1",
+                voice: true,
+                messages: [
+
+                ]
+            },
+            {
+                topic: "admin",
+                voice:true,
+                messages: [
+
+                ]
+            },
+
+        ],
+        users: [
+            {
+                role:"Admin",
+                users:[]
+            },
+            {
+                role:"Active",
+                users:[]
+            },
+            {
+                role:"General",
+                users:[]
+            },
+            {
+                role:"Offline",
+                users:[]
+            },
+        ],
+
+    }
+]
+
+//This is all temporary
 export const messagesWritable:Writable<any> = writable(messagesTemp);
+export const serversWritable:Writable<any> = writable(serversTemp);

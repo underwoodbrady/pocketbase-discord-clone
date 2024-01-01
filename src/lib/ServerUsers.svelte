@@ -10,7 +10,7 @@
 <ul class="menu bg-base-200 w-56 h-full">
 	<li class="menu-title">Admin</li>
     <li>
-        <a href="/" class="space-x-1 items-center"
+        <a href="/server" class="space-x-1 items-center"
             ><div class="avatar placeholder online">
                 <div class="bg-neutral text-neutral-content rounded-full w-8">
                     <span class="text-xs">AW</span>
@@ -21,7 +21,7 @@
     </li>
 	<li class="menu-title">Active</li>
     <li>
-        <a href="/" class="space-x-1 items-center"
+        <a href="/server" class="space-x-1 items-center"
             ><div class="avatar placeholder online">
                 <div class="bg-neutral text-neutral-content rounded-full w-8">
                     <span class="text-xs">BU</span>
@@ -31,7 +31,7 @@
         </a>
     </li>
     <li>
-        <a href="/" class="space-x-1 items-center"
+        <a href="/server" class="space-x-1 items-center"
             ><div class="avatar placeholder">
                 <div class="bg-neutral text-neutral-content rounded-full w-8">
                     <span class="text-xs">RU</span>
@@ -43,7 +43,7 @@
 	<li class="menu-title">General</li>
 	<li class="menu-title">Offline</li>
     <li>
-        <a href="/" class="space-x-1 items-center"
+        <a href="/server" class="space-x-1 items-center"
             ><div class="avatar placeholder offline">
                 <div class="bg-neutral text-neutral-content rounded-full w-8">
                     <span class="text-xs">OF</span>
