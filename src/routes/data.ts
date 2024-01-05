@@ -84,6 +84,7 @@ let messagesTemp = [
 
 let serversTemp = [
     {
+        id: '12345',
         name:"Server #1",
         color:"#8C2022",
         channels: [
@@ -167,7 +168,91 @@ let serversTemp = [
             },
         ],
 
-    }
+    },
+    {
+        id: '222',
+        name:"Server #2",
+        color:"#1E4599",
+        channels: [
+            {
+                title:"General"
+            },
+            {
+                topic: "general",
+                messages: [
+
+                ]
+            },
+
+        ],
+        users: [
+            {
+                role:"General",
+                users:[]
+            },
+            {
+                role:"Offline",
+                users:[]
+            },
+        ],
+
+    },
+    {
+        id: '333',
+        name:"Server #3",
+        color:"#602898",
+        channels: [
+            {
+                title:"General"
+            },
+            {
+                topic: "general",
+                messages: [
+
+                ]
+            },
+
+        ],
+        users: [
+            {
+                role:"General",
+                users:[]
+            },
+            {
+                role:"Offline",
+                users:[]
+            },
+        ],
+
+    },
+    {
+        id: '444',
+        name:"Server #4",
+        color:"#156C38",
+        channels: [
+            {
+                title:"General"
+            },
+            {
+                topic: "general",
+                messages: [
+
+                ]
+            },
+
+        ],
+        users: [
+            {
+                role:"General",
+                users:[]
+            },
+            {
+                role:"Offline",
+                users:[]
+            },
+        ],
+
+    },
 ]
 
 //This is all temporary

@@ -23,7 +23,8 @@
 		</button>
 	</header>
 	<ul class="menu bg-base-200 w-56 h-full">
-		<button class="btn btn-ghost btn-sm mx-2 my-1 justify-start"><Requests />Requests</button>
+	
+			<button class="btn btn-ghost px-4 btn-sm my-1 justify-start"><Requests />Requests</button>
 		<li class="menu-title">
 			<div class="flex justify-between items-center">
 				Direct Messages
