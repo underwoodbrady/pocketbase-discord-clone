@@ -18,6 +18,7 @@
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@tailwindcss/typography": "^0.5.10",
+		"@types/node": "^20.10.6",
 		"autoprefixer": "^10.4.16",
 		"daisyui": "^4.4.24",
 		"postcss": "^8.4.32",
@@ -31,5 +32,8 @@
 		"unplugin-icons": "^0.18.1",
 		"vite": "^5.0.3"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"pocketbase": "^0.20.1"
+	}
 }
