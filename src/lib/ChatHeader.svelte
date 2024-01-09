@@ -57,16 +57,19 @@
 					>
 						<li>
 							<!-- svelte-ignore a11y-missing-attribute -->
-							
-							<a><Profile/> Profile </a>
+
+							<a><Profile /> Profile </a>
 						</li>
 						<!-- svelte-ignore a11y-missing-attribute -->
 						<li>
-							
-							<a><Settings/>Settings</a>
+							<a><Settings />Settings</a>
 						</li>
 						<!-- svelte-ignore a11y-missing-attribute -->
-						<li><a class="font-semibold"><Logout/>Logout</a></li>
+						<li>
+							<form action="/logout" method="POST">
+								<button type="submit" class="font-semibold flex items-center space-x-2"><Logout /><p>Logout</p></button>
+							</form>
+						</li>
 					</ul>
 				</div>
 			{/if}
